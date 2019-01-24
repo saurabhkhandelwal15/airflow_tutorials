@@ -1,0 +1,112 @@
+AIRFLOW TUTORIALS
+############################# WORKING FINAL CODE
+
+Go to this path:
+C:\Users\khandelwal saurabh\Desktop\Cases\Airflow\Data-Pipelining\Airflow 
+
+and start docker
+
+ON DOCKER
+cd C:/Users/"khandelwal saurabh"/Desktop/Cases/Airflow
+
+http://intellectualgambols.blogspot.com/2017/09/how-to-run-airflow-in-windows-with.html
+http://www.marknagelberg.com/getting-started-with-airflow-using-docker/
+
+docker run -p 3141:8080 b67ee29f94cc
+
+docker pull puckel/docker-airflow
+docker run puckel/docker-airflow
+
+docker run -d -p 3141:8080 -v airflowdemo:/usr/local/airflow/dags puckel/docker-airflow webserver
+
+To copy dags & files
+docker cp airflowdemo/. f111a174561e:/usr/local/airflow/dags/
+
+
+
+To start bash:
+winpty docker exec -ti container_name bash
+winpty docker exec -ti fervent_murdock bash
+
+
+basic video to cover & command to test
+https://www.youtube.com/watch?v=Qs02p3mh8m4&feature=youtu.be
+
+https://github.com/vishalsatam/Data-Pipelining
+
+
+kubenetes operator
+https://medium.com/@chengzhizhao/explore-airflow-kubernetesexecutor-on-aws-and-kops-1c4dd33e56e0
+
+
+##################### NOT IN USE : ROUGH
+
+docker run -p 3141:8080 puckel/docker-airflow
+
+docker run -d -p 3141:8080 -v /path/to/dags/on/your/local/machine/:/usr/local/airflow/dags  puckel/docker-airflow webserver
+
+docker run -d -p 3141:8080 -v /c/Users/khandelwal saurabh/Desktop/Cases/Airflow/Data-Pipelining/Airflow/AirflowDemo/:/usr/local/airflow/dags  puckel/docker-airflow webserver
+
+
+cmd="docker run --rm -v "$(pwd):/opt/wappalyzer" -it wappalyzer/dev"
+echo "${cmd}"
+
+cmd="docker run -d -p 3141:8080 -v "$(pwd):/usr/local/airflow/dags" puckel/docker-airflow webserver"
+
+
+docker run -d -p 3141:8080 -v "/C/Users/khandelwal saurabh/Desktop/Cases/Airflow/Data-Pipelining/Airflow/airflowdemo/:/usr/local/airflow/dags"  puckel/docker-airflow webserver
+
+docker run -d -p 3141:8080 -v puckel/docker-airflow webserver
+
+
+
+docker run -d -p 3141:8080 -v "/C/Users/khandelwal saurabh/Desktop/Cases/Airflow/Data-Pipelining/Airflow/airflowdemo/:/usr/local/airflow/dags"  puckel/docker-airflow webserver
+
+docker run -d -p 3141:8080 --mount source=/C/Users/khandelwal saurabh/Desktop/Cases/Airflow/Data-Pipelining/Airflow/airflowdemo,destination=/usr/local/airflow/dags
+
+
+/Data-Pipelining/Airflow/AirflowDemo
+
+
+
+http://wsl-guide.org/en/latest/installation.html
+
+
+https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+http://wsl-guide.org/en/latest/installation.html
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+
+
+git clone https://github.com/puckel/docker-airflow
+
+python C:\Users\"khandelwal saurabh"\Desktop\Cases\Airflow\airflow-master\build\scripts-3.5\airflow %*
+
+##################################### next set of codes
+
+http://michal.karzynski.pl/blog/2017/03/19/developing-workflows-with-apache-airflow/
+PATH - 
+C:\Users\"khandelwal saurabh"\Desktop\Cases\Airflow
+
+
+C:\Users\khandelwal saurabh\AppData\Local\Programs\Python\Python35
+
+virtualenv --python "C:\\Users\\khandelwal saurabh\\AppData\\Local\\Programs\\Python\\Python35\\python.exe" venv
+
+C:\Users\"khandelwal saurabh"\Desktop\Cases\Airflow\workspace\env\Scripts\activate
+
+set SLUGIFY_USES_TEXT_UNIDECODE=yes 
+
+pip install apache-airflow
+
+mkdir airflow_home
+
+SET AIRFLOW_HOME=`pwd`/airflow_home
+
+python C:\path\to\airflow %*
+
+python C:\Users\khandelwal saurabh\Desktop\Cases\Airflow\workspace\env\Lib\site-packages\airflow %*
+
+SET PATH="C:\Users\khandelwal saurabh\Desktop\Cases\Airflow\workspace\env\Lib\site-packages\airflow"
+
+SET AIRFLOW_HOME=`pwd`/airflow_home

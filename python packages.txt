@@ -1,0 +1,37 @@
+Python: DB connections and Data imports
+
+Pandas 
+Pyodbc 
+Scrapy 
+
+
+Python: Data manipulation
+
+NumPy
+Pandas
+Jupyter Notebook
+
+Python: Modeling
+
+SciPy 
+StatsModels 
+Scikit Learn 
+XGBoost / LightGBM / CatBoost 
+ELI5 
+NetworkX 
+TensorFlow 
+PyTorch 
+Keras 
+NLTK 
+SpaCy 
+Gensim 
+
+Python: Time Series
+
+NumPy
+Pandas
+Prophet
+
+Python: Visualization & Maps
+MatplotLib
+Seaborn
